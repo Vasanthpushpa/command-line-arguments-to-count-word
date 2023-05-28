@@ -39,7 +39,9 @@ print("Total Words:",len(words))
 ```
 
 ### OUTPUT:
-![image](https://github.com/Vasanthpushpa/command-line-arguments-to-count-word/assets/119291100/45addf75-c383-4a0c-ac5d-a6ae637e5186)
+
+![image](https://github.com/Vasanthpushpa/command-line-arguments-to-count-word/assets/119291100/ffb7886d-64b9-4098-bccc-37f529f9c00d)
+
 
 
 
