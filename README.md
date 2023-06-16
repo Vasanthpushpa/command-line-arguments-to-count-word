@@ -27,20 +27,33 @@ Run the program to determine the number of words in the file created.
 
 ## PROGRAM:
 ```
-Developed by: VASANTH P
-Register Number: 212222240113
+Developed By: VASANTH P
+Register Number: 2212222240113
 
 import sys
-fp= open(sys.argv[1])
-data=fp.read()
-words=data.split()
-print("Total Words:",len(words))
+count = {}
+with open(sys.argv[1], 'r') as f:
+    for line in f:
+        for word in line.split():
+            if word not in count:
+                count[word] = 1
+            else:
+                count[word] += 1
+print(count)
+f.close()
+
 
 ```
 
 ### OUTPUT:
 
-![image](https://github.com/Vasanthpushpa/command-line-arguments-to-count-word/assets/119291100/ffb7886d-64b9-4098-bccc-37f529f9c00d)
+FILE CONTENT:
+
+![image](https://github.com/Vasanthpushpa/command-line-arguments-to-count-word/assets/119291100/ee795bf1-a73e-4721-b485-70d0a2c71862)
+
+OUTPUT:
+
+![image](https://github.com/Vasanthpushpa/command-line-arguments-to-count-word/assets/119291100/e491bc69-4eec-4ea1-83e1-23cb5db4c43a)
 
 
 
